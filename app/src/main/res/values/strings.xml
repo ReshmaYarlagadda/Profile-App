@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">ProfileApp</string>
+    <string name="profile_image">Profile Image</string>
+
+    <string name="name">Reshma Yarlagadda</string>
+    <string name="email">reshma21028cm097@gmail.com</string>
+    <string name="phone">+91 9063667388</string>
+
+    <string name="education">Education</string>
+    <string name="family_details">Family Details</string>
+
+    <!-- SOCIAL MEDIA -->
+    <string name="facebook">Facebook</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="instagram">Instagram</string>
+    <string name="twitter">Twitter</string>
+
+</resources>

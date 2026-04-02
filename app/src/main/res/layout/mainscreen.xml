@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- SPACE (status bar gap) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"/>
+
+    <!-- CUSTOM NAVBAR -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3F51B5"
+        android:elevation="6dp">
+
+        <!-- CENTER TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile App"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- SCROLL CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- PROFILE SECTION -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/chinni"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/chinni" />
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/chinni"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/chinni"
+                    android:text="@string/name"
+                    android:textColor="#222222"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleText"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/chinni"
+                    android:text="@string/email"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:id="@+id/phoneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mailText"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/chinni"
+                    android:text="@string/phone"
+                    android:textColor="#555555" />
+
+            </RelativeLayout>
+
+            <!-- BUTTONS -->
+            <Button
+                android:id="@+id/btnEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3F51B5"
+                android:elevation="4dp"
+                android:text="@string/education"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3F51B5"
+                android:elevation="4dp"
+                android:text="@string/family_details"
+                android:textColor="@android:color/white" />
+
+            <!-- SOCIAL MEDIA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:src="@drawable/fb"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/facebook"/>
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:src="@drawable/whatsapp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/whatsapp"/>
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:src="@drawable/insta"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/instagram"/>
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:src="@drawable/twitter"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/twitter"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
